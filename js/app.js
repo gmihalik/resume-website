@@ -30,6 +30,11 @@
 				controller  : 'researchController'
 			})
 
+			.when('/publications', {
+				templateUrl : 'views/publications.html',
+				controller  : 'publicationsController'
+			})
+
 			.when('/portfolio', {
 				templateUrl : 'views/portfolio.html',
 				controller  : 'portfolioController'
@@ -63,6 +68,10 @@
 	});
 
 	myApp.controller('researchController', function($scope) {
+		$scope.message = 'Look! I am a festivities page.';
+	});
+	
+	myApp.controller('publicationsController', function($scope) {
 		$scope.message = 'Look! I am a festivities page.';
 	});
 	
