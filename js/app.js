@@ -25,9 +25,9 @@
 				controller  : 'industryController'
 			})
 			
-			.when('/photos', {
-				templateUrl : 'views/photos.html',
-				controller  : 'photosController'
+			.when('/research', {
+				templateUrl : 'views/research.html',
+				controller  : 'researchController'
 			})
 
 			.when('/portfolio', {
@@ -62,7 +62,7 @@
 		forget to #HutchihalikWedding!';
 	});
 
-	myApp.controller('festivitiesController', function($scope) {
+	myApp.controller('researchController', function($scope) {
 		$scope.message = 'Look! I am a festivities page.';
 	});
 	
